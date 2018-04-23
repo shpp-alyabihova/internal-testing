@@ -1,0 +1,28 @@
+{
+  "env": "default",
+  "images": {
+    "testName": "1 Image API",
+    "path": "./assets/images",
+    "outputDir": "./assets/resized/images",
+    "sizes": [500, 50]
+  },
+  "weather": {
+    "testName": "2 Query",
+    "collectionName": "weather",
+    "sourceData": "./assets/parsed_weather.json",
+    "windDirection": {
+      "min": 180,
+      "max": 360
+    }
+  },
+  "school": {
+    "testName": "3 Query",
+    "collectionName": "school",
+    "sourceData": "./assets/parsed_school.json"
+  },
+  "db": {
+    "uri": "mongodb://localhost:27017",
+    "name": "DB_NAME",
+    "options": {}
+  }
+}
